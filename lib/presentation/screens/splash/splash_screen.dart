@@ -15,16 +15,15 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    _loadData();
+    Future.microtask(() => _loadData());
   }
 
   Future<void> _loadData() async {
     await Future.wait([
       context.read<TaskProvider>().fetchDailyTasks(),
-      Future.delayed(const Duration(seconds: 2)),
+      Future.delayed(const Duration(seconds: 3)),
     ]);
 
-    // 3. Navigate to Home Screen
     if (mounted) {
       Navigator.pushReplacement(
         context,
@@ -36,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF0D0D0D),
+      backgroundColor: const Color.fromARGB(255, 228, 228, 228),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -48,11 +47,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 shape: BoxShape.circle,
                 color: Colors.indigoAccent.withValues(alpha: 0.1),
               ),
-              child: const Icon(
-                Icons.auto_awesome,
-                color: Colors.indigoAccent,
-                size: 60,
-              ),
+              child: Image.asset('assets/logo.png', width: 80, height: 80),
             ),
             const SizedBox(height: 24),
             Text(
