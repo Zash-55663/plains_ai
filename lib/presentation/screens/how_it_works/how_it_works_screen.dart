@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:plains_ai/presentation/widgets/how_it_works/build_feature_list.dart';
-import 'package:plains_ai/presentation/widgets/how_it_works/build_workflow_switcher.dart';
-import 'package:plains_ai/presentation/widgets/how_it_works/how_it_works_header.dart';
-import 'package:plains_ai/presentation/widgets/how_it_works/workflow_content.dart';
-import '../../widgets/home/build_app_bar.dart';
-import '../../widgets/home/build_bottom_nav_widget.dart';
+
+import '../../widgets/widgets.dart';
 
 class HowItWorksScreen extends StatefulWidget {
   const HowItWorksScreen({super.key});

@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:plains_ai/presentation/widgets/pricing/plan_preview_section.dart';
-import 'package:plains_ai/presentation/widgets/pricing/pricing_disclaimer.dart';
-import 'package:plains_ai/presentation/widgets/pricing/step_process_section.dart';
-import '../../widgets/home/build_app_bar.dart';
-import '../../widgets/home/build_bottom_nav_widget.dart';
-import '../../widgets/pricing/pricing_card.dart';
+
+import '../../widgets/widgets.dart';
 
 class PricingScreen extends StatelessWidget {
   const PricingScreen({super.key});

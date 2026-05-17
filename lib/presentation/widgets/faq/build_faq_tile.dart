@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:plains_ai/data/models/faq_item.dart';
+import 'package:plains_ai/data/models/faq_model.dart';
 
 class BuildFAQTile extends StatelessWidget {
-  final FAQItem item;
+  final FaqModel item;
 
   const BuildFAQTile({super.key, required this.item});
 

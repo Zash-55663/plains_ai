@@ -60,10 +60,10 @@ class BuildTaskListWidget extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Text(
-                    task.time,
-                    style: GoogleFonts.inter(color: Colors.grey, fontSize: 12),
-                  ),
+                  // Text(
+                  //   task.time,
+                  //   style: GoogleFonts.inter(color: Colors.grey, fontSize: 12),
+                  // ),
                 ],
               ),
             );

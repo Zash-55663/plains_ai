@@ -1,22 +1,22 @@
-class PlanisTask {
-  final int id;
+class PlainsTask {
+  final String id;
   final String title;
-  final String time;
+  final String description;
   final bool isCompleted;
 
-  PlanisTask({
+  PlainsTask({
     required this.id,
     required this.title,
-    required this.time,
-    this.isCompleted = false,
+    required this.description,
+    required this.isCompleted,
   });
 
-  factory PlanisTask.fromJson(Map<String, dynamic> json) {
-    return PlanisTask(
+  factory PlainsTask.fromJson(Map<String, dynamic> json) {
+    return PlainsTask(
       id: json['id'],
       title: json['title'],
-      time: json['time'] ?? "09:00 AM",
-      isCompleted: json['completed'] ?? false,
+      description: json['description'] ?? '',
+      isCompleted: json['isCompleted'] ?? false,
     );
   }
 }

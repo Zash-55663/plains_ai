@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:plains_ai/core/theme/app_theme.dart';
 import 'package:plains_ai/data/repositories/task_provider.dart';
-import 'package:plains_ai/presentation/screens/splash/splash_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -21,8 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: planisTheme,
-      home: SplashScreen(),
+      theme: ThemeData(primaryColor: Color.fromARGB(255, 2, 96, 6)),
     );
   }
 }

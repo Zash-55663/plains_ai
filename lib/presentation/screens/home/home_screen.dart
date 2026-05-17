@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:plains_ai/data/repositories/task_provider.dart';
-import 'package:plains_ai/presentation/widgets/home/build_app_bar.dart';
-import 'package:plains_ai/presentation/widgets/home/build_bottom_nav_widget.dart';
-import 'package:plains_ai/presentation/widgets/home/build_hero_section_widget.dart';
-import 'package:plains_ai/presentation/widgets/home/home_card_views_widget.dart';
-import 'package:provider/provider.dart';
+
+import '../../widgets/widgets.dart';
 
 class PlanisHomeScreen extends StatefulWidget {
   const PlanisHomeScreen({super.key});
